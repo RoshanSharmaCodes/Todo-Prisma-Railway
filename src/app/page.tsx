@@ -1,4 +1,5 @@
-export default async function Home() {
+async function Home() {
+
   const getUsers = async () => {
     const res = await fetch(`${process.env.BASE_URL}/api/getUser`)
     const result = await res.json()
@@ -23,3 +24,5 @@ export default async function Home() {
     </div>
   )
 }
+
+export default Home
